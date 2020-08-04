@@ -17,7 +17,7 @@ If you have a [Waveshare LoRa HAT](https://www.waveshare.com/wiki/SX1262_868M_Lo
 
 ## EBYTE chip configuration
 
-Keep in mind that EBYTE chips are configured via UART (like a normal frame transmission) but setting M0=1, M1=0 via GPIO (3.3V) or jumper wires.
+Keep in mind that EBYTE chips are configured via UART just like a normal binary frame transmission but setting M0=1, M1=0 before. You can do it via GPIO (3.3V for high) or jumper wires.
 
 If you use E22 and have Windows installed, you can go for the easy option with the app [RFSetting](http://www.ebyte.com/en/pdf-down.aspx?id=1516). In other case, you will have to send the configuration frame using the config scripts below. Refer to the [user manual](http://www.ebyte.com/en/data-download.aspx) of your precise module for detailed information.
 
