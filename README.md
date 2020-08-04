@@ -1,8 +1,8 @@
 # IP over LoRa
 
-Collection of scripts aimed for configuring EBYTE E22 / E32 UART LoRa MCU modules along with Raspbian for serial transmission using LoRa modulation.
+Collection of scripts aimed for configuring EBYTE E22 / E32 UART LoRa modules along with Raspbian for serial transmission using LoRa modulation. EBYTE modules are kind of different from typical modules: they use serial UART protocol instead of the SPI protocol of barebone LoRa modules. They include an MCU on top of the barebone LoRa radio for making UART conversion possible and managing config and Tx/Rx buffers. 
 
-The pinout used for EBYTE E22 / E32 modules is:
+The pinout used for connecting the EBYTE modules to the Raspi is:
 
 EBYTE | Raspberry
 - Vcc |  5V
@@ -13,13 +13,13 @@ EBYTE | Raspberry
 - M1 | GPIO 27
 - AUX | GPIO 4
     
-If you have a [Waveshare LoRa HAT](https://www.waveshare.com/wiki/SX1262_868M_LoRa_HAT), lucky you, I chose the same pinout.
+If you have a [Waveshare LoRa HAT](https://www.waveshare.com/wiki/SX1262_868M_LoRa_HAT), then lucky you, I chose the same pinout.
 
 ## EBYTE chip configuration
 
 Keep in mind that EBYTE chips are configured via UART (like a normal frame transmission) but setting M0=1, M1=0 via GPIO (3.3V) or jumper wires.
 
-If you use E22 and have Windows installed, you can go for the easy option with the app [RFSetting](http://www.ebyte.com/en/pdf-down.aspx?id=1516). In other case, you will have to send the configuration frame manually with a Python script. Refer to the [user manual](http://www.ebyte.com/en/data-download.aspx) of your module for further instructions. Refer to config scripts below.
+If you use E22 and have Windows installed, you can go for the easy option with the app [RFSetting](http://www.ebyte.com/en/pdf-down.aspx?id=1516). In other case, you will have to send the configuration frame using the config scripts below. Refer to the [user manual](http://www.ebyte.com/en/data-download.aspx) of your precise module for detailed information.
 
 >**Warning:** Always comply with your national usage restrictions. Unlicensed ISM bands are also regulated. When configuring your radio settings, pay special attention to: EIRP (max Tx power + ant gain), bandwidth, and duty cycle/LBT).
 
