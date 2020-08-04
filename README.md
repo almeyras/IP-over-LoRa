@@ -1,11 +1,11 @@
 # IP over LoRa
 
-Collection of scripts aimed for configuring EBYTE E22/E32 UART LoRa MCU modules along with Raspbian for serial transmission using LoRa modulation.
+Collection of scripts aimed for configuring EBYTE E22 / E32 UART LoRa MCU modules along with Raspbian for serial transmission using LoRa modulation.
 
 The pinout used for EBYTE E22 / E32 modules is:
 
-  EBYTE | Raspberry
-    Vcc | 5V
+EBYTE | Raspberry
+Vcc | 5V
      Tx | Rx
      Rx | Tx
     GND | 0V
