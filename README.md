@@ -28,7 +28,9 @@ Before you start:
 - Transmission modes require M0=0, M1=0, which are handled by the script.
 - Change tty line _(/dev/ttyS0, ttyAMA0...)_ according to your Raspberry Pi model and configuration (Bluetooth disabled in order to avoid mini-UART). Check [UART configuration](https://www.raspberrypi.org/documentation/configuration/uart.md) and available lines using `ls /dev/tty*` and `ls -l /dev/serial*`.
 - Tweak tty baud rates according to your configuration.
+- MTU is configured in sizes lower than the buffer (240 bytes for E22, 512 bytes for E32). MTU = buffer - overhead. For example, if you use an E22 with tncattach ptp mode (4 overhead bytes), then MTU = 240 - 4 = 236
 - Select different IP addresses.
+
 Now, for the IP over LoRa scripts...
 
 Fully commented configuration scripts. In order to the modules to communicate in the same network, these scripts have to be configured with similar parameters:
