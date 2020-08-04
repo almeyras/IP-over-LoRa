@@ -8,3 +8,8 @@ The pinout used for EBYTE E22 / E32 modules is:
 
 Files included:
 - **tncattach.sh; tncattach.py**: sample script (check IPs in both hosts) for point-to-point communication using Mark Qvist's "tncattach".
+
+
+### Interesting projects
+- [LoRa-AX25-IP-Network](https://github.com/dmahony/LoRa-AX25-IP-Network) by Daniel Weiber.
+- [TNC Attach](https://github.com/markqvist/tncattach) by Mark Qvist.
