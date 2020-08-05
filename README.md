@@ -1,5 +1,7 @@
 # IP over LoRa
 
+aaaa
+
 Collection of scripts aimed for configuring EBYTE E22 / E32 UART LoRa modules along with Raspbian for serial transmission using LoRa modulation. EBYTE modules are kind of different from typical modules: they use serial UART protocol instead of the SPI protocol of barebone LoRa modules. They include an MCU on top of the barebone LoRa radio for making UART conversion possible and managing config and Tx/Rx buffers. 
 
 The pinout used for connecting the EBYTE modules to the Raspi is:
