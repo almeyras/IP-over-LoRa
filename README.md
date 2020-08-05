@@ -55,3 +55,5 @@ Point to multipoint transmission with TNC Attach:
 - [LoRa-AX25-IP-Network](https://github.com/dmahony/LoRa-AX25-IP-Network) by Daniel Weiber.
 - [TNC Attach](https://github.com/markqvist/tncattach) by Mark Qvist.
 - [IP over LoRa at 868 MHz (EU) using tncattach](https://asciinema.org/a/350743). Video recorded by me using tncattach and early versions of these scripts.
+- Wikipedia: [KISS](https://en.wikipedia.org/wiki/KISS_(TNC)), a protocol (keep it simple, stupid) that establishes a command code system for TNC (Terminal Node Controllers / serial modems) used in amateur radio.
+- Wikipedia: [AX.25](https://en.wikipedia.org/wiki/AX.25), a packet switching system used in amateur radio. It is layer 2 protocol. It is frequently used on top of KISS.
